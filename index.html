@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-  </head>
-  <body>
-    
-    <h1>garroci</h1><br><h1>cigarrin</h1>
+    <title>Botão de Emoji</title>
+    <style>
+        /* Estilos opcionais para centralizar o conteúdo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+        #emoji-container {
+            font-size: 5rem; /* Tamanho grande para o emoji */
+            margin-top: 20px;
+            height: 100px; /* Altura fixa para evitar que o botão se mova */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
-  </body>
+    <button onclick="mostrarEmoji()">Clique em mim</button>
+
+    <div id="emoji-container"></div>
+
+    <script>
+        function mostrarEmoji() {
+            document.getElementById('emoji-container').textContent = '🚬';
+        }
+    </script>
+
+</body>
 </html>
